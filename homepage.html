@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Gaming Store</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <img src="assets/logo.png" class="logo" />
+            <nav>
+                <ul class="menuicons" id="menuList">
+                    <li><a href="#">Gaming Controllers</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="assets/menu.png" class="menuicon" onclick="toggleMenu()" />
+        </div>
+        <div class="mainContent">
+            <div class="left">
+                <h2>PS4 V2 <br> Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible / Generic )</p>
+                <h4>$99.90</h4>
+                <button>Buy Now <img src="assets/arrow.png" /></button>
+            </div>
+            <div class="right">
+                <img src="assets/controller.png" class="controller"/>
+                <div class="color-box"></div>
+                <div class="addToCart">
+                    <img src="assets/add.png"/>
+                    <p>Add to Cart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menuList  = document.getElementById('menuList');
+        menuList.style.maxHeight = '0px';
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
